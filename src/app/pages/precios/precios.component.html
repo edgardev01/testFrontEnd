@@ -1,0 +1,14 @@
+<h1 class="text-center m-5">Selector de Colores</h1>
+<input
+  type="text"
+  class="col-sm-2 col-form-label form-control m1"
+  [(ngModel)]="Color"
+/>
+
+<button
+  [ngStyle]="{ background: Color, color: '#fff' }"
+  class="btn mt-5"
+  (click)="Mostrar()"
+>
+  verificar
+</button>
